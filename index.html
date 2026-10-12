@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Browse the Doonesbury comic strip archive by year.">
+    <title>Doonesbury Archive</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script type="module" src="assets/index.js"></script>
+  </head>
+  <body class="index-page">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Doonesbury Archive home">
+        <span class="wordmark__title">Doonesbury</span>
+        <span class="wordmark__subtitle">The strip archive</span>
+      </a>
+    </header>
+
+    <main class="index-main">
+      <section class="intro" aria-labelledby="archive-title">
+        <p class="eyebrow">Read from the beginning, or pick a year</p>
+        <h1 id="archive-title">Five decades,<br>one continuous story.</h1>
+        <p class="intro__copy">
+          Daily and Sunday strips are arranged together in publication order. Choose a year to begin
+          with its first available strip, then move through the archive one day at a time.
+        </p>
+        <p class="archive-summary" id="archive-summary" aria-live="polite">Loading archive…</p>
+      </section>
+
+      <aside class="resume-panel" id="resume-panel" hidden>
+        <div>
+          <p class="eyebrow">Welcome back</p>
+          <h2>Continue where you left off</h2>
+          <p id="resume-detail"></p>
+        </div>
+        <a class="button button--primary" id="resume-link" href="viewer.html">Resume reading <span aria-hidden="true">→</span></a>
+      </aside>
+
+      <section class="years-section" aria-labelledby="years-title">
+        <div class="section-heading">
+          <h2 id="years-title">Browse by year</h2>
+          <p>Each year opens at its first available strip.</p>
+        </div>
+        <div class="year-grid" id="year-grid" aria-live="polite"></div>
+        <p class="error-panel" id="page-error" role="alert" hidden></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Personal archive reader · Served locally</p>
+    </footer>
+  </body>
+</html>
