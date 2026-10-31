@@ -2,6 +2,19 @@
 
 A dependency-free static website for browsing the daily and Sunday strip archive in one chronological sequence.
 
+## Features
+
+- Index page with every available year and strip counts
+- Unified chronological reader for daily and Sunday strips
+- Previous and next buttons with cross-year navigation
+- Left and right arrow-key navigation
+- Responsive display for both wide daily strips and tall Sunday strips
+- Storyline descriptions sourced from the archive's yearly JSON metadata
+- Shareable links to individual strips
+- One-year resume cookie that remembers the last successfully viewed strip
+- Repeatable, standard-library Python catalog generator with archive validation
+- No application server or third-party dependencies required
+
 ## Build the catalog
 
 The browser cannot list local directories, so generate `data/catalog.json` after adding, removing, or renaming archive files:
